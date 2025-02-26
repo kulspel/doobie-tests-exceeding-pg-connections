@@ -9,7 +9,7 @@ object DatabaseConfig {
   lazy val transactor = HikariTransactor
     .newHikariTransactor[IO](
       "org.postgresql.Driver",
-      "jdbc:postgresql://127.0.0.1:5433/vinotheque_test",
+      "jdbc:postgresql://127.0.0.1:5433/postgres",
       "postgres",
       "postgres",
       ExecutionContext.global,
